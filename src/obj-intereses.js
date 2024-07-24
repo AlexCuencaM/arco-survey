@@ -1,5 +1,6 @@
 
 ( () => {
+    loggingUnsuccessfully();
     const gruposPalabrasIntereses = [
         {
           grupo: 1,

@@ -1,4 +1,5 @@
 ( () => {
+    loggingUnsuccessfully();
     // Function Body...
     const dropdown = document.querySelector('.dropdown');
     dropdown.addEventListener("click", e => {

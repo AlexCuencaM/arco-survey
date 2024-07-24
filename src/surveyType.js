@@ -1,4 +1,5 @@
 ( () => {
+    loggingUnsuccessfully();
     // Function Body...
     document.getElementById("behavior").addEventListener("click", e => {
         window.location = "./surveyBehavior.html"

@@ -1,6 +1,7 @@
 
 
 ( () => {
+    loggingUnsuccessfully();
     const gruposPalabrasComportamientos = [
         {
           grupo: 1,

@@ -1,5 +1,6 @@
 ( () => {
     // Function Body...
+    loggingUnsuccessfully();
     const preguntasArquetipos = [
       {
         id: 1,

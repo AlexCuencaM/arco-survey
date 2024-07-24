@@ -1,6 +1,6 @@
 ( () => {
     // Function Body...
-    loggingUnsuccessfully();
+    // loggingUnsuccessfully();
     const preguntasArquetipos = [
       {
         id: 1,
@@ -222,7 +222,20 @@
             ${questionAnswers(question)}
           </article>`
     }
+    
     document.getElementById("list").innerHTML = preguntasArquetipos.map(questionGroup).join(" ")
+    document.querySelectorAll("article").forEach(article => {
+
+        article.addEventListener("click", e => {
+            const clickedEl = e.target;
+            const link = clickedEl.tagName === "SPAN" ? clickedEl.parentElement : clickedEl;
+            article.querySelectorAll("a.panel-block").forEach(panelLink => {
+                panelLink.classList.remove('is-active');
+            })
+            link.classList.toggle('is-active');
+            console.log(link);
+        })
+    })
     document.querySelector(".button.is-success").addEventListener("click", e => {
         window.location = "./surveyType.html"
     });

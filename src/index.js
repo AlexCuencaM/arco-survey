@@ -8,9 +8,6 @@
             email: currentForm?.elements["email"]?.value ?? "",
             contrasena: currentForm?.elements["password"]?.value ?? "",
         }        
-        // sendPost("auth/login", sendData).then(res => {
-        //     loggingSuccessfully(res)
-        // })
         sendPost("auth/login", sendData).then(loggedSuccessfully);
     });
 } )();
